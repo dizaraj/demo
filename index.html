@@ -144,14 +144,16 @@
                 </div>
             </div>
         </div>
-        
+
     </div>
 
     <!-- About Section -->
     <div id="about" class="container p-5 mt-5 mb-5 bg-light text-dark rounded-2">
         <h2 class="mb-3">About Me</h2>
         <p class="lead poppins-thin">
-            I am a passionate web developer with experience in HTML, CSS, Bootstrap, PHP, Javascript, jQuery and React. I enjoy creating dynamic and interactive websites that provide a great user experience. I am always eager to learn new
+            I am a passionate web developer with experience in HTML, CSS, Bootstrap, PHP, Javascript, jQuery and React.
+            I enjoy creating dynamic and interactive websites that provide a great user experience. I am always eager to
+            learn new
             technologies
             and improve my skills.
         </p>
@@ -427,7 +429,7 @@
             <h3 class="text-body fs-lg pb-3 mb-3">Get in Touch</h3>
             <!-- <p>Fill out the form</p> -->
             <div class="container">
-                <form action="https://formsubmit.co/dizaraj@gmail.com" method="POST">
+                <form onsubmit="sendMail(); reset(); return false">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" class="form-control" id="name" name="name" required>
@@ -510,6 +512,8 @@
 
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/script.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
 
 </body>
 
