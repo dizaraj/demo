@@ -226,7 +226,6 @@ h2::after {
 }
 
 .skill-bar-percent {
-    float: right;
     display: inline-block;
     color: #323232;
     font-size: 11px;
